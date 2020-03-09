@@ -345,3 +345,5 @@ local.properties
 .worksheet
 
 /.idea/
+
+/lib/
