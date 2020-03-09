@@ -14,16 +14,18 @@ import ErrorOverlayWebpackPlugin from 'error-overlay-webpack-plugin'
 
 const config: Configuration = {
   mode: 'production',
-  entry: resolve(__dirname, 'index.ts'),
+  entry: resolve(__dirname, '../', 'index.ts'),
   devtool: 'source-map',
   output: {
-    filename: '[name]-[hash].bundle.js',
-    path: resolve(__dirname, 'lib'),
+    filename: 'index.js',
+    path: resolve(__dirname, '../', 'lib'),
+    library: '',
+    libraryTarget: 'umd',
   },
   resolve: {
     extensions: ['.ts', '.js', '.json'],
     alias: {
-      src: resolve(__dirname, 'src'),
+      src: resolve(__dirname, '../', 'src'),
     },
   },
   module: {
@@ -49,10 +51,12 @@ const config: Configuration = {
       exclude: /node_modules/,
       failOnError: true,
       allowAsyncCycles: false,
-      cwd: resolve(__dirname),
+      cwd: resolve(__dirname, '../'),
     }),
     new ErrorOverlayWebpackPlugin(),
-    new CleanWebpackPlugin(),
+    new CleanWebpackPlugin({
+      cleanOnceBeforeBuildPatterns: [resolve(__dirname, '../', 'types')],
+    }),
     new ForkTsCheckerWebpackPlugin({
       memoryLimit: 1024 * 4,
       tsconfig: resolve(__dirname, 'tsconfig.json'),

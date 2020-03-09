@@ -1,6 +1,6 @@
 import webpack from 'webpack'
 
-import { prodConfig } from '../webpack.config'
+import { prodConfig } from './webpack.config'
 
 const compiler = webpack(prodConfig)
 

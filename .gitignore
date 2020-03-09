@@ -347,3 +347,4 @@ local.properties
 /.idea/
 
 /lib/
+/types/

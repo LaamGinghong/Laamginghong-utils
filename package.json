@@ -2,17 +2,19 @@
   "name": "laamginghong-utils",
   "version": "1.0.0",
   "description": "utils for Laamginghong-design",
-  "main": "index.ts",
+  "main": "lib/index.js",
   "author": "LaamGinghong <351390560@qq.com>",
+  "types": "types/index.d.ts",
   "license": "MIT",
   "scripts": {
-    "build": "cross-env-shell ts-node --files -P ./tsconfig.json ./scripts/build.ts",
+    "build": "cross-env-shell ts-node --files -P ./scripts/tsconfig.json ./scripts/build.ts && tsc --emitDeclarationOnly",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
     "lint": "eslint -c .eslintrc.js --ext .ts"
   },
   "sideEffects": false,
   "files": [
-    "lib/**/*"
+    "lib/**/*",
+    "types/**/*"
   ],
   "husky": {
     "hooks": {

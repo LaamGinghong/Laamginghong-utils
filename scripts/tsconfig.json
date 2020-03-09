@@ -5,22 +5,16 @@
     "isolatedModules": true,
     "sourceMap": true,
     "outDir": "types",
-    "declaration": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "baseUrl": "./",
-    "experimentalDecorators": true,
     "lib": ["DOM", "ESNext"],
     "strict": true,
     "alwaysStrict": true,
     "resolveJsonModule": true,
     "moduleResolution": "Node",
-    "emitDecoratorMetadata": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "paths": {
-      "src/*": ["src/*"]
-    }
+    "forceConsistentCasingInFileNames": true
   },
-  "exclude": ["node_modules", "scripts"]
+  "exclude": ["../node_modules"]
 }
