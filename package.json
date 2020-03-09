@@ -1,0 +1,8 @@
+{
+  "name": "laamginghong-utils",
+  "version": "1.0.0",
+  "description": "utils for laamginghong-design",
+  "main": "index.ts",
+  "author": "LaamGinghong <351390560@qq.com>",
+  "license": "MIT"
+}
