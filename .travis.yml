@@ -1,0 +1,18 @@
+language: node_js
+cache: yarn
+install: yarn --frozen-lockfile
+script:
+  - yarn changelog
+  - yarn lint
+jobs:
+  include:
+    - stage: npm release
+      if: tag IS present
+      script: yarn build
+      deploy:
+        provider: npm
+        email: "$NPM_EMAIL"
+        api_key: "$NPM_TOKEN"
+        skip_cleanup: true
+        on:
+          tags: true

@@ -11,6 +11,9 @@
     "lint": "eslint -c .eslintrc.js --ext .ts"
   },
   "sideEffects": false,
+  "files": [
+    "lib/**/*"
+  ],
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
