@@ -29,4 +29,10 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: ['@typescript-eslint'],
+  rules: {
+    '@typescript-eslint/no-explicit-any': 'off',
+    'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
+    '@typescript-eslint/explicit-function-return-type': 'off',
+    'import/prefer-default-export': 'off',
+  },
 }

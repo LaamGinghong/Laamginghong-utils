@@ -26,6 +26,7 @@ const config: Configuration = {
     extensions: ['.ts', '.js', '.json'],
     alias: {
       src: resolve(__dirname, '../', 'src'),
+      internal: resolve(__dirname, '../', 'internal'),
     },
   },
   module: {

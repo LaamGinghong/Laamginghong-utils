@@ -19,7 +19,8 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "paths": {
-      "src/*": ["src/*"]
+      "src/*": ["src/*"],
+      "internal": ["internal/*"]
     }
   },
   "exclude": ["node_modules", "scripts"]
