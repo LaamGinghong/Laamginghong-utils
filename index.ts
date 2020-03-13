@@ -9,6 +9,7 @@ import { isObject } from 'src/is-object'
 import { isRegExp } from 'src/is-reg-exp'
 import { isString } from 'src/is-string'
 import { isUndefined } from 'src/is-undefined'
+import { chunk } from 'src/chunk'
 
 export {
   isNil,
@@ -22,4 +23,5 @@ export {
   isDate,
   isNull,
   isUndefined,
+  chunk,
 }

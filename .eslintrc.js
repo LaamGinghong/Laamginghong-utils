@@ -34,5 +34,15 @@ module.exports = {
     'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
     '@typescript-eslint/explicit-function-return-type': 'off',
     'import/prefer-default-export': 'off',
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      {
+        js: 'never',
+        jsx: 'never',
+        ts: 'never',
+        tsx: 'never',
+      },
+    ],
   },
 }
