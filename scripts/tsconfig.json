@@ -3,7 +3,7 @@
     "target": "ESNext",
     "module": "CommonJS",
     "isolatedModules": true,
-    "sourceMap": true,
+    "sourceMap": false,
     "outDir": "types",
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
