@@ -1,6 +1,6 @@
 {
   "name": "laamginghong-utils",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "utils for Laamginghong-design",
   "main": "lib/index.js",
   "author": "LaamGinghong <351390560@qq.com>",
