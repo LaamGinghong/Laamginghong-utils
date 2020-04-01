@@ -17,11 +17,7 @@
     "moduleResolution": "Node",
     "emitDecoratorMetadata": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "paths": {
-      "src/*": ["src/*"],
-      "internal": ["internal/*"]
-    }
+    "forceConsistentCasingInFileNames": true
   },
-  "exclude": ["node_modules", "scripts"]
+  "exclude": ["node_modules", "scripts", "lib"]
 }

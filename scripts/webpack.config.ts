@@ -20,10 +20,6 @@ const config: Configuration = {
   },
   resolve: {
     extensions: ['.ts', '.js', '.json'],
-    alias: {
-      src: resolve(__dirname, '../', 'src'),
-      internal: resolve(__dirname, '../', 'internal'),
-    },
   },
   module: {
     rules: [
